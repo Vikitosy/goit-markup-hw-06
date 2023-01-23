@@ -424,23 +424,9 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  color: var(--color-bg-project);
 }
-/* Якщо лейбл стоїть в інпуті  */
-/* .subscribe-lable {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-} */
-/* .subscribe-input:not(:placeholder-shown)+.subscribe-lable{
-visibility: hidden;
-} */
+
 .subcribe-btn {
   margin-left: 12px;
   width: 200px;
@@ -510,6 +496,7 @@ visibility: hidden;
   height: 30px;
   cursor: pointer;
   transition: color 250ms var(--timing-function);
+  background-color: transparent;
 }
 .close-btn .icon {
   fill: currentColor;
@@ -646,10 +633,10 @@ visibility: hidden;
   visibility: hidden;
  }
 
-.checkbox:checked + .accept-label .icon {
+.checkbox:checked + .accept-label .icon, .accept-label:hover .icon, .accept-label:focus-within .icon  {
   visibility: visible;
 }
-.checkbox:checked + .accept-label .accept-icon {
+.checkbox:checked + .accept-label .accept-icon, .accept-label:hover .accept-icon, .accept-label:focus-within .accept-icon {
   visibility: hidden;
 }
 .contract-terms {
