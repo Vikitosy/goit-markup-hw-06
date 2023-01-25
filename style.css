@@ -633,12 +633,18 @@ body {
   visibility: hidden;
  }
 
-.checkbox:checked + .accept-label .icon, .accept-label:hover .icon, .accept-label:focus-within .icon  {
+.checkbox:checked + .accept-label .icon {
   visibility: visible;
 }
-.checkbox:checked + .accept-label .accept-icon, .accept-label:hover .accept-icon, .accept-label:focus-within .accept-icon {
+.accept-label:focus-within .accept-icon {
+  outline: 2px solid var(--color-logo);
+  
+}
+
+.checkbox:checked + .accept-label .accept-icon {
   visibility: hidden;
 }
+
 .contract-terms {
   margin-left: 8px;
   color: var(--color-logo);
