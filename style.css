@@ -636,11 +636,10 @@ body {
 .checkbox:checked + .accept-label .icon {
   visibility: visible;
 }
-.accept-label:focus-within .accept-icon {
-  outline: 2px solid var(--color-logo);
-  
-}
 
+.checkbox:focus + .accept-label .accept-icon {
+  outline: 2px solid var(--color-logo);
+}
 .checkbox:checked + .accept-label .accept-icon {
   visibility: hidden;
 }
